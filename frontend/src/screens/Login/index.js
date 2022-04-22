@@ -30,8 +30,8 @@ export const Login = () => {
           Faça seu login com {'\n'}uma das contas abaixo
         </CallToAction>
         <LoginIn>
-          <SignInButton title="Google" />
-          <SignInButton title="Apple" />
+          <SignInButton title="Entrar com o Google" />
+          <SignInButton title="Entrar com a Apple" />
         </LoginIn>
       </Content>
     </Container>
