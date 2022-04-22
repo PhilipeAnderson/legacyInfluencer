@@ -29,11 +29,11 @@ Bem vindo ao um projeto criado para a conclusão de curso de Análise e Desenvol
     <tbody>
     	<tr>
         	<td align="center"><img width="220" src="assets/inicio.png" alt="Tela de Login do App" /></td>
-          <td align="center"><img width="220" src="assets/home.png" alt="Tela de Inicio do App" /></td>
-          <td align="center"><img width="220" src="assets/cadastro.png" alt="Tela de Inicio do App" /></td>
+          <td align="center"><img width="220" src="assets/Home.png" alt="Tela de Inicio do App" /></td>
+          <td align="center"><img width="220" src="assets/Cadastro.png" alt="Tela de Inicio do App" /></td>
           <td align="center"><img width="220" src="assets/perfil.png" alt="Tela de Inicio do App" /></td>
           <td align="center"><img width="220" src="assets/orcamento.png" alt="Tela de Inicio do App" /></td>
-          <td align="center"><img width="220" src="assets/pagamento.png" alt="Tela de Inicio do App" /></td>
+          <td align="center"><img width="220" src="assets/Pagamento.png" alt="Tela de Inicio do App" /></td>
         </tr>
     </tbody>
 </table>
