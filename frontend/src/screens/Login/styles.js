@@ -10,12 +10,32 @@ export const Header = styled.View`
   background: #000;
 `;
 
-export const LogoApp = styled.Image`
-  height: 100px;
-  width: 250px;
+export const LogoLegacy = styled.Image`
+  height: 350px;
+  width: 400px;
 `;
 
 export const Content = styled.View`
   height: 66%;
   background: #1DCDB8;
+  align-items: center;
+  `;
+
+export const Title = styled.Text`
+  text-align: center;
+  font-size: 36px;
+  color: #FFF;
+  margin-top: 40px;
+`;
+
+export const CallToAction = styled.Text`
+  text-align: center;
+  font-size: 16px;
+  color: #fff;
+  margin-top: 30px;
+  margin-bottom: 30px;
+`;
+
+export const LoginIn = styled.View`
+
 `;
