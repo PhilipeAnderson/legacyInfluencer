@@ -1,6 +1,5 @@
 import styled from 'styled-components/native';
 import { RFValue, RFPercentage } from 'react-native-responsive-fontsize';
-import { theme } from '../../theme/theme';
 
 
 export const Container = styled.View`
@@ -17,12 +16,14 @@ export const Header = styled.View`
 `;
 
 export const Title = styled.Text`
-  color: #FFFFFF;
-  font-size: 20px;
+  color: ${({ theme }) => theme.colors.textBlack};
+  font-size: ${RFValue(20)}px;
 `;
 
 export const InfoSession = styled.View`
-  height:50%;
+  width: ${RFPercentage(100)}%;
+  height:${RFValue(80)}px;
+  margin-bottom: ${RFValue(12)}px;
   background-color: red;
 `;
 
@@ -43,7 +44,7 @@ export const NameUser = styled.Text`
 `;
 
 export const Logout = styled.Text`
-
+  color: ${({ theme }) => theme.colors.textBlack}
 `;
 
 
@@ -62,9 +63,9 @@ export const Content = styled.View`
 `;
 
 export const TextMain = styled.Text`
-  margin-top: ${RFPercentage(20)}px;
+  margin-top: ${RFPercentage(5)}%;
   text-align: center;
   font-size: ${RFValue(33)}px;
-  color: ${({ theme }) => theme.colors.text};
+  color: ${({ theme }) => theme.colors.textWhite};
 `;
 

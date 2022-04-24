@@ -19,7 +19,7 @@ export const Profile = () => {
             </NameUser>
           </InfoUser>
           <Logout>
-
+            Logout
           </Logout>
         </InfoSession>
 
