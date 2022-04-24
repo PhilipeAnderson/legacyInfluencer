@@ -1,8 +1,14 @@
 import React from 'react';
-import { Login } from './src/screens/Login';
+import { ThemeProvider } from 'styled-components';
+
+import { Profile } from './src/screens/Profile';
+
+import { theme } from './src/theme/theme';
 
 export default function App() {
   return (
-      <Login />
+    <ThemeProvider theme={ theme }>
+      <Profile />
+    </ThemeProvider>
   );
 }
