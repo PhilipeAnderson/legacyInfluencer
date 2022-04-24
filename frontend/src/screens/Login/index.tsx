@@ -11,8 +11,8 @@ import {
 import LogoApp from '../../assets/logo.png';
 import { SignInButton } from '../../components/SignInButton';
 
-import GoogleSvg from '../../assets/icon-google.svg';
-import AppleSvg from '../../assets/icon-apple.svg';
+// import GoogleSvg from '../../assets/icon-google.svg';
+// import AppleSvg from '../../assets/icon-apple.svg';
 
 export const Login = () => {
   return(
