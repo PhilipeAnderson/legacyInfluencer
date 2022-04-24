@@ -1,5 +1,7 @@
+import styled from 'styled-components/native'
+;
+import { Feather } from '@expo/vector-icons';
 import { RFValue, RFPercentage } from 'react-native-responsive-fontsize';
-import styled from 'styled-components/native';
 
 export const Container = styled.View`
   width: ${RFPercentage(100)}%;
@@ -14,27 +16,24 @@ export const Container = styled.View`
 export const InfoUser = styled.View`
   width: 12%;
   height: ${RFValue(80)}px;
-  background-color: green;
   align-items: center;
   justify-content: flex-start;
   flex-direction: row;
 `;
 
 export const PhotoUser = styled.Image`
-  width: 70px;
-  height: 70px;
-  background-color: red;;
+  width: ${RFValue(70)}px;
+  height: ${RFValue(70)}px;
 `;
 
 export const Greeting = styled.Text`
-
-`;
-
-export const NameUser = styled.Text`
+  font-size: ${RFValue(24)}px;
+  font-weight: bold;
+  margin-left: 10px;
   color: ${({ theme }) => theme.colors.textWhite};
 `;
 
-export const Logout = styled.Text`
+export const Logout = styled(Feather)`
   color: ${({ theme }) => theme.colors.textBlack};
-  font-size: 20px;
+  font-size: 33px;
 `;
