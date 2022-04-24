@@ -26,8 +26,6 @@ Bem vindo ao um projeto criado para a conclusão de curso de Análise e Desenvol
           <th>Tela de Inicio</th>
           <th>Cadastro</th>
           <th>Perfil</th>
-          <th>Orçamento</th>
-          <th>Pagamento</th>
         </tr>
     </thead>
     <tbody>
@@ -36,8 +34,9 @@ Bem vindo ao um projeto criado para a conclusão de curso de Análise e Desenvol
           <td align="center"><img width="200" src="assets/Home.png" alt="Tela de Inicio do App" /></td>
           <td align="center"><img width="200" src="assets/Cadastro.png" alt="Tela de Inicio do App" /></td>
           <td align="center"><img width="200" src="assets/perfil.png" alt="Tela de Inicio do App" /></td>
-          <td align="center"><img width="200" src="assets/orcamento.png" alt="Tela de Inicio do App" /></td>
-          <td align="center"><img width="200" src="assets/Pagamento.png" alt="Tela de Inicio do App" /></td>
-        </tr>
+      </tr>
+      <tr>
+          
+
     </tbody>
 </table>
