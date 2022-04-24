@@ -9,51 +9,16 @@ export const Container = styled.View`
 
 //Header ==========================
 export const Header = styled.View`
-  height: 20%;
+  height: ${RFPercentage(3)}%;
   align-items: center;
   justify-content: flex-end;
-  background-color: #1DCDB8;
+  background-color: ${({ theme }) => theme.colors.backgroundLight};
 `;
 
 export const Title = styled.Text`
   color: ${({ theme }) => theme.colors.textBlack};
   font-size: ${RFValue(20)}px;
 `;
-
-export const InfoSession = styled.View`
-  width: ${RFPercentage(100)}%;
-  height:${RFValue(80)}px;
-  margin-bottom: ${RFValue(12)}px;
-  background-color: red;
-`;
-
-export const InfoUser = styled.View`
-
-`;
-
-export const PhotoUser = styled.Image`
-
-`;
-
-export const Greeting = styled.Text`
-
-`;
-
-export const NameUser = styled.Text`
-
-`;
-
-export const Logout = styled.Text`
-  color: ${({ theme }) => theme.colors.textBlack}
-`;
-
-
-
-
-
-
-
-
 
 //Content =========================
 export const Content = styled.View`
@@ -63,9 +28,9 @@ export const Content = styled.View`
 `;
 
 export const TextMain = styled.Text`
-  margin-top: ${RFPercentage(5)}%;
+  margin-top: ${RFPercentage(3)}%;
   text-align: center;
-  font-size: ${RFValue(33)}px;
+  font-size: ${RFValue(30)}px;
   color: ${({ theme }) => theme.colors.textWhite};
 `;
 

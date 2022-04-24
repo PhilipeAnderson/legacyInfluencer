@@ -1,31 +1,13 @@
 import React from 'react';
-
-import { Container, Header, InfoSession, InfoUser,PhotoUser,Greeting,NameUser,Logout,Title, Content, TextMain } from './styles';
+import { Container, Header, Title, Content, TextMain } from './styles';
+import { HeaderSession } from '../../components/HeaderSession';
 
 export const Profile = () => {
   return (
     <Container>
       <Header>
-        <InfoSession>
-          <InfoUser>
-            <PhotoUser>
-
-            </PhotoUser>
-            <Greeting>
-
-            </Greeting>
-            <NameUser>
-
-            </NameUser>
-          </InfoUser>
-          <Logout>
-            Logout
-          </Logout>
-        </InfoSession>
-
-        <Title>
-          Seu Perfil
-        </Title>
+        <HeaderSession />
+        <Title>Seu Perfil</Title>
       </Header>
       <Content>
         <TextMain>
