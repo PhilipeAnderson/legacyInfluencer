@@ -2,6 +2,8 @@ import React from 'react';
 import { Container, Header, Title, Content, TextMain } from './styles';
 import { HeaderSession } from '../../components/HeaderSession';
 
+import { RegularButton } from '../../components/RegularButton';
+
 export const Profile = () => {
   return (
     <Container>
@@ -16,6 +18,9 @@ export const Profile = () => {
           sua jornada pelo{'\n'}
           Legacy Influencer
         </TextMain>
+
+        <RegularButton name="Influencer" />
+        <RegularButton name="Influencer" />
       </Content>
     </Container>
   );
