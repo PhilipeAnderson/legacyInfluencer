@@ -23,20 +23,23 @@ export const Logo = styled.Image`
 export const Content = styled.View`
   width: 100%;
   height: 70%;
+  align-items: center;
+  justify-content: center;
   background-color: ${({ theme }) => theme.colors.backgroundDefault};
 `;
 
 export const TextContent = styled.Text`
   text-align: center;
   font-size: ${RFValue(36)}px;
-  margin-top: ${RFValue(54)}px;
+  margin-top: ${RFValue(20)}px;
   color: ${({ theme }) => theme.colors.textLight}
 `;
 
 export const TextLogin = styled.Text`
   text-align: center;
   font-size: ${RFValue(18)}px;
-  margin-top: ${RFValue(40)}px;
+  margin-top: ${RFValue(30)}px;
+  margin-bottom: ${RFValue(30)}px;
   color: ${({ theme }) => theme.colors.textLight}
 
 `;
