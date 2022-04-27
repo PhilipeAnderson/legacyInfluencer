@@ -22,9 +22,11 @@ export const Login = () => {
         </TextLogin>
         <SignInButton 
           title="Login com o Google"
+          
         />
         <SignInButton 
           title="Login com a Apple"
+
         />
       </Content>
     </Container>
