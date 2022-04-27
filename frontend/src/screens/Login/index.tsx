@@ -25,11 +25,11 @@ export const Login = () => {
         </TextLogin>
         <SignInButton 
           icon={ GoogleImg }
-          title="Login com o Google"
+          title="Entrar com o Google"
         />
         <SignInButton 
           icon={ AppleImg }
-          title="Login com a Apple"
+          title="Entrar com a Apple"
         />
       </Content>
     </Container>
