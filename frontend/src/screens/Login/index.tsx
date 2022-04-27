@@ -3,6 +3,9 @@ import React from 'react';
 import { SignInButton } from '../../components/SignInButton';
 import { Container, Header, Content, Logo, TextContent, TextLogin } from './styles';
 
+import GoogleImg from '../../assets/icon-google.svg';
+import AppleImg from '../../assets/icon-apple.svg';
+
 export const Login = () => {
   return (
     <Container>
@@ -21,14 +24,15 @@ export const Login = () => {
           uma das contas abaixo
         </TextLogin>
         <SignInButton 
+          icon={ GoogleImg }
           title="Login com o Google"
-          
         />
         <SignInButton 
+          icon={ AppleImg }
           title="Login com a Apple"
-
         />
       </Content>
     </Container>
   );
 };
+

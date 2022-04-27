@@ -12,7 +12,6 @@ export const Header = styled.View`
   width: 100%;
   height: 30%;
   align-items: center;
-
   background-color: ${({ theme }) => theme.colors.backgroundDark};
 `;
 
