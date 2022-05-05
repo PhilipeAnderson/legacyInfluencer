@@ -7,7 +7,8 @@ export const Container = styled.View`
   background-color: ${({ theme }) => theme.colors.backgroundScape};
 `;
 
-export const Title = styled.Text`
-  color: #FFFFFF;
-  font-size: 26px;
+export const Content = styled.View`
+  width: 100%;
+  height: 70%;
+  background-color: black
 `;

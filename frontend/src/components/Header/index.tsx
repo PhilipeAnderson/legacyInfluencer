@@ -2,6 +2,7 @@ import React from 'react';
 
 import { 
   Container,
+  Content,
   UserData,
   UserPic,
   UserGreeting,
@@ -13,15 +14,16 @@ import {
 export const Header = () => {
   return (
     <Container>
-      <UserData>
-        <UserPic source={require('../../assets/user.png')} />
-        <UserGreeting>
-          <TextGreeting>Olá , </TextGreeting>
-          <TextGreeting>Usuário</TextGreeting>
-        </UserGreeting>
-      </UserData>
-      <Icon source={require('../../assets/icon.png')}/>  
-        
+      <Content>
+        <UserData>
+          <UserPic source={require('../../assets/user.png')} />
+          <UserGreeting>
+            <TextGreeting>Olá , </TextGreeting>
+            <TextGreeting>Usuário</TextGreeting>
+          </UserGreeting>
+        </UserData>
+        <Icon source={require('../../assets/icon.png')}/>  
+      </Content>
     </Container>
   );
 };

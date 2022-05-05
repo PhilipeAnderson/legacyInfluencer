@@ -2,8 +2,14 @@ import styled from 'styled-components/native';
 
 export const Container = styled.View`
   width: 100%;
-  height: 20%;
+  height: 30%;
   background-color: ${({ theme }) => theme.colors.backgroundDefault};
+`;
+
+export const Content = styled.View`
+  width: 100%;
+  height: 70%;
+  margin: 0 auto;
 
   align-items: center;
   justify-content: space-between;
@@ -35,7 +41,7 @@ export const TextGreeting = styled.Text`
 `;
 
 export const Icon = styled.Image`
-  width: 30px;
-  height: 30px;
-  margin-right: 10px;
+  width: 35px;
+  height: 35px;
+  margin-right: 20px;
 `;
