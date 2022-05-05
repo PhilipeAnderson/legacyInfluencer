@@ -5,7 +5,8 @@ import {
   UserData,
   UserPic,
   UserGreeting,
-  TextGreeting
+  TextGreeting,
+  Icon
 
 } from './styles';
 
@@ -18,7 +19,9 @@ export const Header = () => {
           <TextGreeting>Olá , </TextGreeting>
           <TextGreeting>Usuário</TextGreeting>
         </UserGreeting>
-      </UserData>    
+      </UserData>
+      <Icon source={require('../../assets/icon.png')}/>  
+        
     </Container>
   );
 };
