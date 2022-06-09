@@ -5,18 +5,17 @@ import { Button } from '../../components/Button';
 
 import { Container, Content, Congratulations, ConfirmText, ConfirmPic } from './styles';
 
-export const Confirm = () => {
+export const Payment = () => {
   return (
     <Container>
-      <Header title="Confirmação"/>
+      <Header title="Pagamento" />
       <Content>
-        <Congratulations>Parabéns !</Congratulations>
+        <Congratulations>Pagar via PIX</Congratulations>
         <ConfirmText>
-          O contrato com Nathalia {'\n'}
-          foi efetivado com sucesso!  
+          R$: 15.0000,00
         </ConfirmText>
-        <ConfirmPic source={require('../../assets/checkIn.png')}/>
-        <Button title="Voltar a Tela Inicial" />
+        <ConfirmPic source={require('../../assets/qrcode.png')}/>
+        <Button title="Pagar Nathalia" />
       </Content>
     </Container>
   );

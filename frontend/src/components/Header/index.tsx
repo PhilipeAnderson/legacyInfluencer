@@ -11,7 +11,11 @@ import {
   TitlePageHeader
 } from './styles';
 
-export const Header = () => {
+interface titleProps {
+  title: string
+}
+
+export const Header = ({ title }: titleProps) => {
   return (
     <Container>
       <Content>
@@ -24,7 +28,7 @@ export const Header = () => {
         </UserData>
         <Icon source={require('../../assets/power.png')}/>  
       </Content>
-      <TitlePageHeader>Confirmação</TitlePageHeader>
+      <TitlePageHeader>{ title }</TitlePageHeader>
     </Container>
   );
 };
