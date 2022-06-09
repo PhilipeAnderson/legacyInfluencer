@@ -7,8 +7,8 @@ import {
   UserPic,
   UserGreeting,
   TextGreeting,
-  Icon
-
+  Icon,
+  TitlePageHeader
 } from './styles';
 
 export const Header = () => {
@@ -22,8 +22,9 @@ export const Header = () => {
             <TextGreeting>Usuário</TextGreeting>
           </UserGreeting>
         </UserData>
-        <Icon source={require('../../assets/icon.png')}/>  
+        <Icon source={require('../../assets/power.png')}/>  
       </Content>
+      <TitlePageHeader>Confirmação</TitlePageHeader>
     </Container>
   );
 };

@@ -4,6 +4,9 @@ export const Container = styled.View`
   width: 100%;
   height: 30%;
   background-color: ${({ theme }) => theme.colors.backgroundDefault};
+
+  align-items: center;
+  justify-content: center;
 `;
 
 export const Content = styled.View`
@@ -13,7 +16,7 @@ export const Content = styled.View`
 
   align-items: center;
   justify-content: space-between;
-  flex-direction: row
+  flex-direction: row;
 `;
 
 export const UserData = styled.View`
@@ -37,11 +40,18 @@ export const UserGreeting  = styled.View`
 export const TextGreeting = styled.Text`
   font-size: 18px;
   font-weight: bold;
-  color: ${({ theme }) => theme.colors.textLight}
+  color: ${({ theme }) => theme.colors.textLight};
 `;
 
 export const Icon = styled.Image`
-  width: 35px;
-  height: 35px;
+  width: 33px;
+  height: 33px;
+  margin-top: -10px;
   margin-right: 20px;
+`;
+
+export const TitlePageHeader = styled.Text`
+  color: #f00;
+  font-size: 24px;
+  color: ${({ theme }) => theme.colors.textLight};
 `;
