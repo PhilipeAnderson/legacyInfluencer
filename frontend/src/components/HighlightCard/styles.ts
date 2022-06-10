@@ -7,8 +7,8 @@ export const Container = styled.View`
 `;
 
 export const Content = styled.View`
-  width: 200px;
-  height: 300px;
+  width: 280px;
+  height: 400px;
   border-radius: 12px;
   align-items: center;
 `;
@@ -21,16 +21,30 @@ export const Image = styled.Image`
 
 export const InfoSquare = styled.View`
   position: absolute;
-  margin-top: 200px;
-  width: 90%;
-  height: 90px;
+  margin-top: 240px;
+  width: 94%;
+  height: 150px;
   border-radius: 10px;
   background-color: rgba(0,0,0,0.8);
 `;
 
-export const QRCode = styled.Image`
-
-  width: 50px;
-  height: 50px;
-  border-radius: 5px;
+export const SocialNets = styled.View`
+  width: 25%;
+  height: 100vh;
+`;
+export const Instagram = styled.Image`
+  width: 25px;
+  height: 25px;
+`;
+export const Facebook = styled.Image`
+  width: 25px;
+  height: 25px;
+`;
+export const LinkedIn = styled.Image`
+  width: 25px;
+  height: 25px;
+`;
+export const YouTube = styled.Image`
+  width: 25px;
+  height: 25px;
 `;
