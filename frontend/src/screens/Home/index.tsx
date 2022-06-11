@@ -10,7 +10,21 @@ export const Home = () => {
     <Container>
       <Header title="  "/>
       <Content>
-        <HighlightCard />
+        <HighlightCard
+          influencer="Patrícia Mendonça"
+          occupation="Engenheiro de Software"
+          numberFollowers="12.546.877"
+        />
+        <HighlightCard
+          influencer="Patrícia Mendonça"
+          occupation="Engenheiro de Software"
+          numberFollowers="12.546.877"
+        />
+        <HighlightCard
+          influencer="Patrícia Mendonça"
+          occupation="Engenheiro de Software"
+          numberFollowers="12.546.877"
+        />
       </Content>
     </Container>
   );

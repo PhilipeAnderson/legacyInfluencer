@@ -9,10 +9,20 @@ import {
   Instagram,
   Facebook,
   LinkedIn,
-  YouTube 
+  YouTube,
+  DetailsInfluencer,
+  Occupation,
+  Followers,
+  NumberFollowers
 } from './styles';
 
-export const HighlightCard = () => {
+interface DetailsProps{
+  influencer: string,
+  occupation: string,
+  numberFollowers: string
+}
+
+export const HighlightCard = ({ influencer, occupation, numberFollowers }: DetailsProps) => {
   return (
     <Container>
       <Content>
@@ -24,6 +34,21 @@ export const HighlightCard = () => {
             <LinkedIn source={require('../../assets/linkedin.png')} />
             <YouTube source={require('../../assets/youtube.png')}/>
           </SocialNets>
+          <DetailsInfluencer>
+            { influencer }
+            {'\n'}
+            <Occupation>
+              { occupation }
+            </Occupation>
+            {'\n'}
+            <Followers>
+              Seguidores em todas as Redes
+            </Followers>
+            {'\n'}
+            <NumberFollowers>
+              Total: { numberFollowers }
+            </NumberFollowers>
+          </DetailsInfluencer>
         </InfoSquare>
       </Content>
     </Container>
