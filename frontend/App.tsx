@@ -14,7 +14,7 @@ import { Contract } from './src/screens/Contract';
 export default function App() {
   return (
     <ThemeProvider theme={ theme }>
-      <Home />
+      <Contract />
     </ThemeProvider>
   );
 }
