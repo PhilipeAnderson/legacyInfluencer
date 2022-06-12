@@ -26,13 +26,13 @@ export const HighlightCard = ({ influencer, occupation, numberFollowers }: Detai
   return (
     <Container>
       <Content>
-        <Image source={require('../../assets/model01.jpg')}/>
+        <Image source={require('../../../assets/model01.jpg')}/>
         <InfoSquare>
           <SocialNets>
-            <Instagram source={require('../../assets/instagram.png')}/>
-            <Facebook source={require('../../assets/facebook.png')} />
-            <LinkedIn source={require('../../assets/linkedin.png')} />
-            <YouTube source={require('../../assets/youtube.png')}/>
+            <Instagram source={require('../../../assets/instagram.png')}/>
+            <Facebook source={require('../../../assets/facebook.png')} />
+            <LinkedIn source={require('../../../assets/linkedin.png')} />
+            <YouTube source={require('../../../assets/youtube.png')}/>
           </SocialNets>
           <DetailsInfluencer>
             { influencer }

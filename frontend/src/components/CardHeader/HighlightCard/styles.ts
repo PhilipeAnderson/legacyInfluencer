@@ -2,13 +2,10 @@ import styled from 'styled-components/native';
 
 export const Container = styled.View`
   width: 100%;
-  height: 300px;
-  margin-top: -75px;
 `;
 
 export const Content = styled.View`
   width: 280px;
-  height: 400px;
   border-radius: 12px;
   align-items: center;
 `;
@@ -21,8 +18,8 @@ export const Image = styled.Image`
 
 export const InfoSquare = styled.View`
   position: absolute;
-  margin-top: 240px;
-  width: 94%;
+  margin-top: 250px;
+  width: 90%;
   height: 150px;
   border-radius: 10px;
   background-color: rgba(0,0,0,0.8);
@@ -31,7 +28,7 @@ export const InfoSquare = styled.View`
 `;
 
 export const SocialNets = styled.View`
-  width: 50px;
+  width: 40px;
   height: 100%;
 `;
 

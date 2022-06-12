@@ -1,31 +1,23 @@
 import React from 'react';
 
 import { Header } from '../../components/Header';
-import { HighlightCard } from '../../components/HighlightCard';
+import { CardHeader } from '../../components/CardHeader';
 
-import { Container, Content } from './styles';
+import { 
+  Container, 
+  Content
+} from './styles';
+
+import { ListInfluencers } from '../../components/ListInfluencers';
 
 export const Home = () => {
   return (
     <Container>
       <Header title="  "/>
       <Content>
-        <HighlightCard
-          influencer="Patrícia Mendonça"
-          occupation="Engenheiro de Software"
-          numberFollowers="12.546.877"
-        />
-        <HighlightCard
-          influencer="Patrícia Mendonça"
-          occupation="Engenheiro de Software"
-          numberFollowers="12.546.877"
-        />
-        <HighlightCard
-          influencer="Patrícia Mendonça"
-          occupation="Engenheiro de Software"
-          numberFollowers="12.546.877"
-        />
+        <CardHeader />
       </Content>
+      <ListInfluencers />
     </Container>
   );
 };
