@@ -38,6 +38,7 @@ export const TopDataInfluencerStarring = styled.View`
   width: 225px;
   height: 30px;
   margin-top: -100px;
+  align-items: center;
 `;
 
 export const TopDataInfluencerName = styled.Text`
@@ -55,7 +56,7 @@ export const TopDataInfluencerSegment = styled.Text`
   color: ${({ theme }) => theme.colors.backgroundLight};
 `;
 
-export const TopDataInfluencerStars = styled.Text`
-  font-size: 48px;
-  color: ${({ theme }) => theme.colors.backgroundLight}
+export const TopDataInfluencerStars = styled.View`
+  width: 100%;
+  margin-top: -25px;
 `;
