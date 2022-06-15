@@ -12,6 +12,6 @@ export const Container = styled.View`
 `;
 
 export const TitleButton = styled.Text`
-  color: yellow;
+  color: ${({ theme }) => theme.colors.backgroundLight};
   font-size: 22px;
 `;
