@@ -16,10 +16,8 @@ import {
 } from './styles';
 
 import {
-  SafeAreaView,
   StyleSheet,
   View,
-  Text,
   Image,
   TouchableOpacity,
 } from 'react-native';
