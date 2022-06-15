@@ -9,11 +9,12 @@ import { Home } from './src/screens/Home';
 import { Confirm } from './src/screens/Confirm';
 import { Payment } from './src/screens/Payment';
 import { Contract } from './src/screens/Contract';
+import { ProfileInfluencer } from './src/screens/ProfileInfluencer';
 
 export default function App() {
   return (
     <ThemeProvider theme={ theme }>
-      <LoginToken />
+      <ProfileInfluencer />
     </ThemeProvider>
   );
 }

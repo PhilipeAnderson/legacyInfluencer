@@ -20,7 +20,7 @@ import {
 export const ListCards = () => {
   return(
     <Container>
-      <ContentImage source={require('../../../assets/model01.jpg')}/>
+      <ContentImage source={require('../../../assets/model01.jpg')} />
       <ContentInfo>
         <ContentName>
           Patrícia Mendonça
