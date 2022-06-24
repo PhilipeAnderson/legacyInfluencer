@@ -1,5 +1,4 @@
 import styled from 'styled-components/native';
-import { RectButton } from 'react-native-gesture-handler';
 
 export const Container = styled.View`
   flex: 1;
@@ -18,6 +17,7 @@ export const DataInfluencer = styled.View`
   width: 100%;
   height: 125px;
   margin-top: 50px;
+  align-items: center;
 `;
 
 export const TopDataInfluencer = styled.View`

@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 
 import { Header } from '../../components/Header';
-import { RectButtonProps } from 'react-native-gesture-handler';
+import { NetSocial } from '../../components/NetSocial';
+import { Button } from '../../components/Button';
 
 import {
   Container,
@@ -95,6 +96,8 @@ export const ProfileInfluencer = () => {
               tempor incididunt ut labore et dolore magna aliqua.
             </AboutText>
           </AboutInfluencer>
+          <NetSocial />
+          <Button title="Orçamento" />
         </DataInfluencer>
       </Content>
     </Container>
