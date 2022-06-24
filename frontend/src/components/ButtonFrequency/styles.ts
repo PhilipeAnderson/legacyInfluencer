@@ -6,6 +6,7 @@ export const Container = styled.View`
   border-radius: 5px;
   align-items: center;
   justify-content: center;
+  margin: 0 10px;
   background-color: ${({ theme }) => theme.colors.backgroundDefault};
 `;
 
