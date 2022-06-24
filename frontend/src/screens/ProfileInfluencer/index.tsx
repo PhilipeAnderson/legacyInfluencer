@@ -21,7 +21,10 @@ import {
   RequestContactAsk,
   RequestContactButton,
   RequestContactButtonText,
-  RequestContactText
+  RequestContactText,
+  AboutInfluencer,
+  AboutTitle,
+  AboutText
 
 
 } from './styles';
@@ -85,6 +88,13 @@ export const ProfileInfluencer = () => {
               Nathalia receberá um aviso em seu aplicativo
             </RequestContactText>
           </CallInfluencer>
+          <AboutInfluencer>
+            <AboutTitle>Sobre:</AboutTitle>
+            <AboutText>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+              tempor incididunt ut labore et dolore magna aliqua.
+            </AboutText>
+          </AboutInfluencer>
         </DataInfluencer>
       </Content>
     </Container>
