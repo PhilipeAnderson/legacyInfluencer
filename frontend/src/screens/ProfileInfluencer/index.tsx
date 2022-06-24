@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 
 import { Header } from '../../components/Header';
+import { RectButtonProps } from 'react-native-gesture-handler';
 
 import {
   Container,
@@ -12,13 +13,20 @@ import {
   TopDataInfluencerName,
   TopDataInfluencerCity,
   TopDataInfluencerSegment,
-  TopDataInfluencerStars
+  TopDataInfluencerStars,
+  RatingBarStyle,
+  StarImageStyle,
+  CallInfluencer,
+  RequestContact,
+  RequestContactAsk,
+  RequestContactButton,
+  RequestContactButtonText,
+  RequestContactText
+
+
 } from './styles';
 
 import {
-  StyleSheet,
-  View,
-  Image,
   TouchableOpacity,
 } from 'react-native';
 
@@ -29,15 +37,14 @@ export const ProfileInfluencer = () => {
 
   const RatingBar = () => {
     return (
-      <View style={styles.ratingBarStyle}>
+      <RatingBarStyle>
         {maxRating.map((item, key) => {
           return (
             <TouchableOpacity
               activeOpacity={0.7}
               key={item}
               onPress={() => setDefaultRating(item)}>
-              <Image
-                style={styles.starImageStyle}
+              <StarImageStyle
                 source={
                   item <= defaultRating
                     ? require('../../assets/starFull.png')
@@ -47,7 +54,7 @@ export const ProfileInfluencer = () => {
             </TouchableOpacity>
           );
         })}
-      </View>
+      </RatingBarStyle>
     );
   };
 
@@ -67,22 +74,19 @@ export const ProfileInfluencer = () => {
               </TopDataInfluencerStars>
             </TopDataInfluencerStarring>
           </TopDataInfluencer>
-
+          <CallInfluencer>
+            <RequestContact>
+              <RequestContactAsk>Solicitar Contato?</RequestContactAsk> 
+              <RequestContactButton>
+                <RequestContactButtonText>SIM</RequestContactButtonText>
+              </RequestContactButton>
+            </RequestContact>
+            <RequestContactText>
+              Nathalia receberá um aviso em seu aplicativo
+            </RequestContactText>
+          </CallInfluencer>
         </DataInfluencer>
       </Content>
     </Container>
   )
 }
-
-const styles = StyleSheet.create({
-  ratingBarStyle: {
-    justifyContent: 'center',
-    flexDirection: 'row',
-    marginTop: 30,
-  },
-  starImageStyle: {
-    width: 40,
-    height: 40,
-    resizeMode: 'cover',
-  },
-});
