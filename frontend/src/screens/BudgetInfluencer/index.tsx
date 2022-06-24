@@ -1,14 +1,23 @@
 import React from 'react';
 import { Header } from '../../components/Header';
+import { NetSocial } from '../../components/NetSocial';
+
 import {
-  Container
+  Container,
+  Content,
+  TitlePage
 } from './styles';
 
 export const BudgetInfluencer = () => {
   return (
     <>
     <Header title="Orçamento"/>
-    <Container />
+    <Container>
+      <Content>
+        <TitlePage>Orçamento</TitlePage>
+        <NetSocial title="Selecione as redes sociais"/>
+      </Content>
+    </Container>
     </>
   )
 }

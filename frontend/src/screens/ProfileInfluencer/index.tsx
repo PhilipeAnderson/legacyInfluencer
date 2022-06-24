@@ -96,7 +96,7 @@ export const ProfileInfluencer = () => {
               tempor incididunt ut labore et dolore magna aliqua.
             </AboutText>
           </AboutInfluencer>
-          <NetSocial />
+          <NetSocial title="Acesse as redes da: Nathalia"/>
           <Button title="Orçamento" />
         </DataInfluencer>
       </Content>
