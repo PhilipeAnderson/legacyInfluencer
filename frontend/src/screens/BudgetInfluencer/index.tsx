@@ -9,7 +9,6 @@ import { Button } from '../../components/Button';
 import {
   Container,
   Content,
-  TitlePage,
   FrequencyBudget,
   FrequencyBudgetText,
   FrequencyDayWeekMonth,
@@ -21,7 +20,10 @@ import {
   ChoicePost,
   ChoicePostText,
   ChoiceEvent,
-  ChoiceEventText
+  ChoiceEventText,
+  ContractValue,
+  ContractValueText,
+  ContractValueMoney
 } from './styles';
 
 export const BudgetInfluencer = () => {
@@ -31,7 +33,6 @@ export const BudgetInfluencer = () => {
     <Header title="Orçamento"/>
     <Container>
       <Content>
-        <TitlePage>Orçamento</TitlePage>
         <NetSocial title="Selecione as redes sociais"/>
         <FrequencyBudget>
           <FrequencyBudgetText>Frequência</FrequencyBudgetText>
@@ -45,7 +46,7 @@ export const BudgetInfluencer = () => {
           <ChoiceQuantityText>Escolha a Quantidade</ChoiceQuantityText>
           <ChoiceStoriesPostEvent>
             <ChoiceStories>
-              <ChoiceStoriesText>Número de Stories</ChoiceStoriesText>
+              <ChoiceStoriesText>Número de Story</ChoiceStoriesText>
               <Input title="04"/>
             </ChoiceStories>
             <ChoicePost>
@@ -58,6 +59,10 @@ export const BudgetInfluencer = () => {
             </ChoiceEvent>
           </ChoiceStoriesPostEvent>
         </ChoiceQuantity>
+        <ContractValue>
+          <ContractValueText>Valor:</ContractValueText>
+          <ContractValueMoney>R$: 15.000,00</ContractValueMoney>
+        </ContractValue>
         <Button title="Contratar"/>
       </Content>
     </Container>
