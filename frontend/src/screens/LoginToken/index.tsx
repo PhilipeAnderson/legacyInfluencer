@@ -12,6 +12,7 @@ import {
 } from './styles';
 
 export const LoginToken = () => {
+
   return (
     <Container>
       <Header>

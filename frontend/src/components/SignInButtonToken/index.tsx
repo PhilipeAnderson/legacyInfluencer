@@ -9,7 +9,8 @@ interface SignButtonPTextProps{
   title: string
 }
 
-export const SignInButtonToken = ({ title }: SignButtonPTextProps ) => {
+export const SignInButtonToken = ({ title }: SignButtonPTextProps  ) => {
+
   return (
     <Container>
       <Title>
