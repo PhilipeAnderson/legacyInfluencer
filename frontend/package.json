@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "@expo/vector-icons": "^13.0.0",
+    "@react-navigation/native": "react-navigation/native",
     "expo": "~41.0.1",
     "expo-splash-screen": "~0.10.2",
     "expo-updates": "~0.5.4",
@@ -22,6 +23,7 @@
     "react-native-svg": "12.1.0",
     "react-native-unimodules": "~0.13.3",
     "react-native-web": "~0.13.12",
+    "react-navigation-stack": "react-navigation/stack",
     "styled-components": "^5.3.5"
   },
   "devDependencies": {
