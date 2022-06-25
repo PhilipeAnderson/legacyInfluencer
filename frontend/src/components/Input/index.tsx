@@ -5,10 +5,16 @@ import {
   Text
 } from './styles';
 
-export const Input = () => {
+interface TitleProps{
+  title: string;
+}
+
+export const Input = ({ title } : TitleProps) => {
   return(
     <Container>
-      <Text>Quantidade de dias da campanha</Text>
+      <Text>
+        { title }
+      </Text>
     </Container>
   )
 }

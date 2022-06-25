@@ -9,7 +9,8 @@ export const Container = styled.View`
   background-color: ${({ theme }) => theme.colors.backgroundLight};
 `;
 
-export const Text = styled.TextInput`
+export const Text = styled.Text`
   font-size: 16px;
+  text-align: center;
   color: ${({ theme }) => theme.colors.backgroundDark}
 `;

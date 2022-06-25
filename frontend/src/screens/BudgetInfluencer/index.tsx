@@ -12,7 +12,14 @@ import {
   TitlePage,
   FrequencyBudget,
   FrequencyBudgetText,
-  FrequencyDayWeekMonth
+  FrequencyDayWeekMonth,
+  ChoiceQuantity,
+  ChoiceQuantityText,
+  ChoiceStoriesPostEvent,
+  ChoiceStories,
+  ChoiceStoriesText,
+  ChoicePost,
+  ChoicePostText
 } from './styles';
 
 export const BudgetInfluencer = () => {
@@ -32,6 +39,19 @@ export const BudgetInfluencer = () => {
             <ButtonFrequency title="MÊS"/>
           </FrequencyDayWeekMonth>
         </FrequencyBudget>
+        <ChoiceQuantity>
+          <ChoiceQuantityText>Escolha a Quantidade</ChoiceQuantityText>
+          <ChoiceStoriesPostEvent>
+            <ChoiceStories>
+              <ChoiceStoriesText>Número de Stories</ChoiceStoriesText>
+              <Input title="04"/>
+            </ChoiceStories>
+            <ChoicePost>
+              <ChoicePostText>Número de Post</ChoicePostText>
+              <Input title="06"/>
+            </ChoicePost>
+          </ChoiceStoriesPostEvent>
+        </ChoiceQuantity>
         <Button title="Contratar"/>
       </Content>
     </Container>
