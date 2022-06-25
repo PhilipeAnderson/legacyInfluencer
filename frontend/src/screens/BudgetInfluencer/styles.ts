@@ -81,4 +81,17 @@ export const ChoicePostText = styled.Text`
   color: ${({ theme }) => theme.colors.backgroundLight}
 `;
 
+export const ChoiceEvent = styled.View`
+  width: 100%;
+  height: 40px;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+`;
+
+export const ChoiceEventText = styled.Text`
+  font-size: 16px;
+  color: ${({ theme }) => theme.colors.backgroundLight}
+`;
+
 
