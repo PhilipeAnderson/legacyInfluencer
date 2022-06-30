@@ -1,10 +1,7 @@
 import React from 'react';
-
 import { SignInButtonToken } from '../../components/SignInButtonToken';
 
-import { Button } from 'react-native';
-
-import { useNavigation } from '@react-navigation/native';
+//import { useNavigation } from '@react-navigation/native';
 
 import { 
   Container, 
@@ -17,10 +14,11 @@ import {
 
 export const LoginToken = () => {
 
-  function openScreen() {
-    const navigation = useNavigation();
-    navigation.navigate('Home');
-  }
+  // const navigation = useNavigation();
+
+  // function openScreen() {
+  //   navigation.navigate('Home');
+  // }
 
   return (
     <Container>
@@ -39,14 +37,12 @@ export const LoginToken = () => {
           uma das contas abaixo
         </TextLogin>
         <SignInButtonToken
-          title="Logar"
-          page="Home"
+          title="Ir Para a Home"
         />
         {/* <SignInButtonToken 
           title="Cadastre-se"
         /> */}
       </Content>
     </Container>
-  );
+  )
 };
-
