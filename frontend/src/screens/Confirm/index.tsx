@@ -16,7 +16,10 @@ export const Confirm = () => {
           foi efetivado com sucesso!  
         </ConfirmText>
         <ConfirmPic source={require('../../assets/checkIn.png')}/>
-        <Button title="Voltar a Tela Inicial" />
+        <Button 
+          title="Voltar a Tela Inicial" 
+          navig="Home"  
+        />
       </Content>
     </Container>
   );

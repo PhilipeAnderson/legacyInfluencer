@@ -15,7 +15,10 @@ export const Payment = () => {
           R$: 15.0000,00
         </ConfirmText>
         <ConfirmPic source={require('../../assets/qrcode.png')}/>
-        <Button title="Pagar Nathalia" />
+        <Button 
+          title="Pagar Nathalia" 
+          navig="Confirm"  
+        />
       </Content>
     </Container>
   );

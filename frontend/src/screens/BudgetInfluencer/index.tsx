@@ -63,7 +63,10 @@ export const BudgetInfluencer = () => {
           <ContractValueText>Valor:</ContractValueText>
           <ContractValueMoney>R$: 15.000,00</ContractValueMoney>
         </ContractValue>
-        <Button title="Contratar"/>
+        <Button 
+          title="Contratar"
+          navig="Contract"  
+        />
       </Content>
     </Container>
     </>
