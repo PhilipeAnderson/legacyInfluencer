@@ -1,8 +1,6 @@
 import React from 'react';
 import { SignInButtonToken } from '../../components/SignInButtonToken';
 
-//import { useNavigation } from '@react-navigation/native';
-
 import { 
   Container, 
   Header, 
@@ -13,12 +11,6 @@ import {
 } from './styles';
 
 export const LoginToken = () => {
-
-  // const navigation = useNavigation();
-
-  // function openScreen() {
-  //   navigation.navigate('Home');
-  // }
 
   return (
     <Container>
