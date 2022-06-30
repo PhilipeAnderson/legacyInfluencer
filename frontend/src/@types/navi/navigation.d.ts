@@ -8,7 +8,9 @@ export declare global {
       Confirm: undefined;
       Payment: undefined;
       Contract: undefined;
-      ProfileInfluencer: undefined;
+      ProfileInfluencer: {
+        navig: string
+      };
       BudgetInfluencer: undefined;
     }
   }

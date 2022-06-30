@@ -97,7 +97,9 @@ export const ProfileInfluencer = () => {
             </AboutText>
           </AboutInfluencer>
           <NetSocial title="Acesse as redes da: Nathalia"/>
-          <Button title="Orçamento" />
+          <Button
+            title="Orçamento"
+          />
         </DataInfluencer>
       </Content>
     </Container>

@@ -14,7 +14,7 @@ import { BudgetInfluencer } from '../screens/BudgetInfluencer';
 
 export const AppRoutes = () => {
   return(
-    <Navigator>
+    <Navigator screenOptions={{ headerShown: false}}>
       <Screen
         name="Login"
         component={ LoginToken }

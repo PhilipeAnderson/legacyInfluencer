@@ -37,8 +37,8 @@ export const LoginToken = () => {
           uma das contas abaixo
         </TextLogin>
         <SignInButtonToken
-          title="Ir Para a Home"
-          navig="Home"
+          title="Logar"
+          navig="ProfileInfluencer"
         />
       </Content>
     </Container>
