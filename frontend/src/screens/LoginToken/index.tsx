@@ -2,6 +2,10 @@ import React from 'react';
 
 import { SignInButtonToken } from '../../components/SignInButtonToken';
 
+import { Button } from 'react-native';
+
+import { useNavigation } from '@react-navigation/native';
+
 import { 
   Container, 
   Header, 
@@ -12,6 +16,11 @@ import {
 } from './styles';
 
 export const LoginToken = () => {
+
+  function openScreen() {
+    const navigation = useNavigation();
+    navigation.navigate('Home');
+  }
 
   return (
     <Container>
@@ -31,10 +40,11 @@ export const LoginToken = () => {
         </TextLogin>
         <SignInButtonToken
           title="Logar"
+          page="Home"
         />
-        <SignInButtonToken 
+        {/* <SignInButtonToken 
           title="Cadastre-se"
-        />
+        /> */}
       </Content>
     </Container>
   );
