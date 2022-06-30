@@ -1,4 +1,5 @@
 import React from 'react';
+import { useNavigation } from '@react-navigation/native';
 
 import { 
   Container, 
@@ -23,8 +24,15 @@ interface DetailsProps{
 }
 
 export const HighlightCard = ({ influencer, occupation, numberFollowers }: DetailsProps) => {
+
+  const navigation = useNavigation();
+
+  const openNextScreen = () => {
+    navigation.navigate('ProfileInfluencer')
+  }
+
   return (
-    <Container>
+    <Container onPress={ openNextScreen }>
       <Content>
         <Image source={require('../../../assets/model01.jpg')}/>
         <InfoSquare>

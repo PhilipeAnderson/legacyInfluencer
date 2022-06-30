@@ -1,5 +1,5 @@
 import React from 'react';
-let image = "https://cdn-cosmos.bluesoft.com.br/products/7896004755892";
+import { useNavigation } from '@react-navigation/native';
 
 import {
   Container,
@@ -18,8 +18,15 @@ import {
 } from './styles';
 
 export const ListCards = () => {
+
+  const navigation = useNavigation();
+
+  const openNextScreen = () => {
+    navigation.navigate('ProfileInfluencer')
+  }
+
   return(
-    <Container>
+    <Container onPress={ openNextScreen }>
       <ContentImage source={require('../../../assets/model01.jpg')} />
       <ContentInfo>
         <ContentName>

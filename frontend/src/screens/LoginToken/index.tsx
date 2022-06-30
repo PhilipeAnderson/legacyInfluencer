@@ -30,7 +30,7 @@ export const LoginToken = () => {
         </TextLogin>
         <SignInButtonToken
           title="Logar"
-          navig="ProfileInfluencer"
+          navig="Home"
         />
       </Content>
     </Container>
