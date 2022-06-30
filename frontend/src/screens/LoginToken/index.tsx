@@ -38,10 +38,8 @@ export const LoginToken = () => {
         </TextLogin>
         <SignInButtonToken
           title="Ir Para a Home"
+          navig="Home"
         />
-        {/* <SignInButtonToken 
-          title="Cadastre-se"
-        /> */}
       </Content>
     </Container>
   )

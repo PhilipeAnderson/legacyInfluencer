@@ -9,14 +9,15 @@ import { Container, Title, SocialImg } from './styles';
 
 interface SignInButtonTokenTextProps{
   title: string;
+  navig: string;
 }
 
-export const SignInButtonToken = ({ title }: SignInButtonTokenTextProps  ) => {
+export const SignInButtonToken = ({ title, navig }: SignInButtonTokenTextProps ) => {
   
   const navigation = useNavigation();
 
   function openScreen() {
-    navigation.navigate('Home');
+    navigation.navigate( navig );
   }
 
   return ( 
