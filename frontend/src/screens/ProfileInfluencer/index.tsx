@@ -26,8 +26,6 @@ import {
   AboutInfluencer,
   AboutTitle,
   AboutText
-
-
 } from './styles';
 
 import {

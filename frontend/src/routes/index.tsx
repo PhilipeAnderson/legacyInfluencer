@@ -10,4 +10,4 @@ export const Routes = () => {
       <AppRoutes />
     </NavigationContainer>
   )
-}
+};

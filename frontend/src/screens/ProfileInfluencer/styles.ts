@@ -4,13 +4,13 @@ export const Container = styled.View`
   flex: 1;
   align-items: center;
   justify-content: center;
-  background-color: ${({ theme }) => theme.colors.backgroundDark};
+  background-color: ${({ theme }) => theme.colors.backgroundDark };
 `;
 
 export const Content = styled.View`
   width: 100%;
   height: 70%;
-  background-color: ${({ theme }) => theme.colors.backgroundDark};
+  background-color: ${({ theme }) => theme.colors.backgroundDark };
 `;
 
 export const DataInfluencer = styled.View`
@@ -46,7 +46,7 @@ export const TopDataInfluencerStarring = styled.View`
 `;
 
 export const TopDataInfluencerName = styled.Text`
-  font-size: 30px;
+  font-size: 24px;
   color: ${({ theme }) => theme.colors.backgroundLight};
 `;
 

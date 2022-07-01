@@ -1,4 +1,5 @@
 import React from 'react';
+import { useNavigation } from '@react-navigation/native';
 
 import { 
   Container,
@@ -7,15 +8,23 @@ import {
   UserPic,
   UserGreeting,
   TextGreeting,
+  UserProfile,
   Icon,
   TitlePageHeader
 } from './styles';
 
 interface titleProps {
-  title: string
+  title: string;
 }
 
 export const Header = ({ title }: titleProps) => {
+
+  const navigation = useNavigation();
+
+  const openNextScreen = () => {
+    navigation.navigate('ProfileUser');
+  };
+
   return (
     <Container>
       <Content>
@@ -26,7 +35,9 @@ export const Header = ({ title }: titleProps) => {
             <TextGreeting>Usuário</TextGreeting>
           </UserGreeting>
         </UserData>
-        <Icon source={require('../../assets/power.png')}/>  
+        <UserProfile onPress={ openNextScreen }>
+          <Icon source={require('../../assets/power.png')} />  
+        </UserProfile>
       </Content>
       <TitlePageHeader>{ title }</TitlePageHeader>
     </Container>

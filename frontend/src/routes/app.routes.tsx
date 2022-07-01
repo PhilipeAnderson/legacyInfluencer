@@ -11,12 +11,13 @@ import { Payment } from '../screens/Payment';
 import { Contract } from '../screens/Contract';
 import { ProfileInfluencer } from '../screens/ProfileInfluencer';
 import { BudgetInfluencer } from '../screens/BudgetInfluencer';
+import { ProfileUser } from '../screens/ProfileUser';
 
 export const AppRoutes = () => {
   return(
     <Navigator screenOptions={{ headerShown: false}}>
       <Screen
-        name="Login"
+        name="LoginToken"
         component={ LoginToken }
       />
       <Screen
@@ -42,6 +43,10 @@ export const AppRoutes = () => {
       <Screen
         name="BudgetInfluencer"
         component={ BudgetInfluencer }
+      />
+      <Screen
+        name="ProfileUser"
+        component={ ProfileUser }
       />
     </Navigator>
   )

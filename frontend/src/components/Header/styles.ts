@@ -43,6 +43,10 @@ export const TextGreeting = styled.Text`
   color: ${({ theme }) => theme.colors.textLight};
 `;
 
+export const UserProfile = styled.TouchableOpacity`
+  
+`;
+
 export const Icon = styled.Image`
   width: 33px;
   height: 33px;
