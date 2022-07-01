@@ -8,6 +8,10 @@ import {
   Content,
   ViewData,
   TitleData,
+  EntryData,
+  NameUser,
+  EmailUser,
+  WhatsUser,
   AboutUser,
   AboutTitle,
   AboutText,
@@ -22,6 +26,17 @@ export const ProfileUser = () => {
         <ViewData>
           <TitleData>
             Dados para ser contactado:
+            <EntryData>
+              <NameUser>
+
+              </NameUser>
+              <EmailUser>
+
+              </EmailUser>
+              <WhatsUser>
+
+              </WhatsUser>
+            </EntryData>
           </TitleData>
         </ViewData>
         <AboutUser>
@@ -35,13 +50,17 @@ export const ProfileUser = () => {
         </AboutUser>
         <ViewButtons>
           <Button 
+            title="Confirmar"
+            navig="Home"
+          />
+          <Button 
             title="Voltar para o App"
             navig="Home"
-            />
+          />
           <Button
             title="Sair do App"
             navig="LoginToken"
-            />
+          />
         </ViewButtons>
       </Content>
     </Container>

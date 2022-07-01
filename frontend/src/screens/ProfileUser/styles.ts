@@ -16,13 +16,44 @@ export const Content = styled.View`
 export const ViewData = styled.View`
   width: 100%;
   height: 33%;
-  margin-top: 30px;
 `;
 
 export const TitleData = styled.Text`
   font-size: 26px;
   color: ${({ theme }) =>  theme.colors.backgroundLight };
 `;
+
+export const EntryData = styled.View`
+  width: 100%;
+  padding: 5px;
+  align-items: center;
+  justify-content: center;
+`;
+
+export const NameUser = styled.View`
+  width: 100%;
+  height: 25px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+`;
+
+export const EmailUser = styled.View`
+  width: 100%;
+  height: 25px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+`;
+
+export const WhatsUser = styled.View`
+  width: 100%;
+  height: 25px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+`;
+
 
 export const AboutUser = styled.View`
   width: 100%;
