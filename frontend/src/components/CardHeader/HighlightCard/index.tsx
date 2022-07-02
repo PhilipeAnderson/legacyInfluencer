@@ -20,7 +20,7 @@ import {
 interface DetailsProps{
   influencer: string,
   occupation: string,
-  numberFollowers: string
+  numberFollowers: string;
 }
 
 export const HighlightCard = ({ influencer, occupation, numberFollowers }: DetailsProps) => {
