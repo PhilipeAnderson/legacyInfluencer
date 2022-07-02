@@ -46,3 +46,5 @@ export const YouTube = styled.Image`
   height: 50px;
   margin: 5px 16px;
 `;
+
+export const LinkExterno = styled.View``;

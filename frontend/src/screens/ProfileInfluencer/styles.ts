@@ -47,17 +47,17 @@ export const TopDataInfluencerStarring = styled.View`
 
 export const TopDataInfluencerName = styled.Text`
   font-size: 24px;
-  color: ${({ theme }) => theme.colors.backgroundLight};
+  color: ${({ theme }) => theme.colors.textLight};
 `;
 
 export const TopDataInfluencerCity = styled.Text`
   font-size: 16px;
-  color: ${({ theme }) => theme.colors.backgroundLight};
+  color: ${({ theme }) => theme.colors.textLight};
 `;
 
 export const TopDataInfluencerSegment = styled.Text`
   font-size: 16px;
-  color: ${({ theme }) => theme.colors.backgroundLight};
+  color: ${({ theme }) => theme.colors.textLight};
 `;
 
 export const TopDataInfluencerStars = styled.View`
@@ -97,14 +97,14 @@ export const RequestContact = styled.View`
 
 export const RequestContactAsk = styled.Text`
   font-size: 20px;
-  color: ${({ theme }) => theme.colors.backgroundLight};
+  color: ${({ theme }) => theme.colors.textLight};
 `;
 
-export const RequestContactButton = styled.View`
+export const RequestContactButton = styled.TouchableOpacity`
   width: 70px;
   height: 30px;
   border-radius: 5px;
-  background-color: ${({ theme }) => theme.colors.backgroundDefault};
+  background-color: ${({ theme }) => theme.colors.backgroundDefault };
 
   align-items: center;
   justify-content: center;
@@ -112,12 +112,12 @@ export const RequestContactButton = styled.View`
 
 export const RequestContactButtonText = styled.Text`
   font-size: 16px;
-  color: ${({ theme }) => theme.colors.backgroundDark};
+  color: ${({ theme }) => theme.colors.textLight };
 `;
 
 export const RequestContactText = styled.Text`
   font-size:15px;
-  color: ${({ theme }) => theme.colors.backgroundLight};
+  color: ${({ theme }) => theme.colors.textLight };
 `;
 
 export const AboutInfluencer = styled.View`
@@ -129,12 +129,12 @@ export const AboutInfluencer = styled.View`
 
 export const AboutTitle = styled.Text`
   font-size: 26px;
-  color: ${({ theme }) =>  theme.colors.backgroundLight};
+  color: ${({ theme }) =>  theme.colors.textLight };
 `;
 
 export const AboutText = styled.Text`
   font-size: 16px;
-  color: ${({ theme }) =>  theme.colors.backgroundLight};  
+  color: ${({ theme }) =>  theme.colors.textLight };  
 `;
 
 

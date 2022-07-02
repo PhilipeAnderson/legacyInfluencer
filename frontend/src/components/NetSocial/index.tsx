@@ -6,11 +6,12 @@ import {
   Facebook,
   LinkedIn,
   YouTube,
-  Text
+  Text,
+  LinkExterno
 } from './styles';
 
 interface TitleProps{
-  title: string
+  title: string;
 }
 
 

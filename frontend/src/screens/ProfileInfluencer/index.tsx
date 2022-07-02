@@ -34,6 +34,7 @@ import {
 
 export const ProfileInfluencer = () => {
 
+  // < Atualizar adicionando ou removendo as estrelas de classificação
   const [defaultRating, setDefaultRating] = useState(2);
   const [maxRating, setMaxRating] = useState([1, 2, 3, 4, 5]);
 
@@ -59,6 +60,15 @@ export const ProfileInfluencer = () => {
       </RatingBarStyle>
     );
   };
+  // </ Atualizar adicionando ou removendo as estrelas de classificação
+
+  // < Trocar o Valor entre SIM e NÃO da Pergunta Solicitar Contato
+  const [yes, setYes] = useState('SIM');
+
+  const changeQuestion = () => {
+    yes === 'SIM' ? setYes('NÃO') : setYes('SIM');
+  };
+  // </ Trocar o Valor entre SIM e NÃO da Pergunta Solicitar Contato
 
   return (
     <Container>
@@ -79,8 +89,8 @@ export const ProfileInfluencer = () => {
           <CallInfluencer>
             <RequestContact>
               <RequestContactAsk>Solicitar Contato?</RequestContactAsk> 
-              <RequestContactButton>
-                <RequestContactButtonText>SIM</RequestContactButtonText>
+              <RequestContactButton onPress={ changeQuestion }>
+                <RequestContactButtonText>{ yes }</RequestContactButtonText>
               </RequestContactButton>
             </RequestContact>
             <RequestContactText>
@@ -94,7 +104,9 @@ export const ProfileInfluencer = () => {
               tempor incididunt ut labore et dolore magna aliqua.
             </AboutText>
           </AboutInfluencer>
-          <NetSocial title="Acesse as redes da: Nathalia"/>
+          <NetSocial
+            title="Acesse as redes da: Nathalia"
+          />
           <Button
             title="Orçamento"
             navig="BudgetInfluencer"
