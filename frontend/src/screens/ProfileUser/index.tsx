@@ -10,8 +10,16 @@ import {
   TitleData,
   EntryData,
   NameUser,
+  NameLabelUser,
+  NameInputUser,
   EmailUser,
+  EmailLabelUser,
+  EmailInputUser,
   WhatsUser,
+  WhatsLabelUser,
+  WhatsInputUser,
+  IconTrash,
+  IconEdit,
   AboutUser,
   AboutTitle,
   AboutText,
@@ -26,18 +34,27 @@ export const ProfileUser = () => {
         <ViewData>
           <TitleData>
             Dados para ser contactado:
-            <EntryData>
-              <NameUser>
-
-              </NameUser>
-              <EmailUser>
-
-              </EmailUser>
-              <WhatsUser>
-
-              </WhatsUser>
-            </EntryData>
           </TitleData>
+          <EntryData>
+            <NameUser>
+              <NameLabelUser>Nome:</NameLabelUser>
+              <NameInputUser />
+              <IconTrash name="edit"/>
+              <IconEdit name="trash-2"/>
+            </NameUser>
+            <EmailUser>
+              <EmailLabelUser>E-mail:</EmailLabelUser>
+              <EmailInputUser />
+              <IconTrash name="edit"/>
+              <IconEdit name="trash-2"/>
+            </EmailUser>
+            <WhatsUser>
+              <WhatsLabelUser>Whats:</WhatsLabelUser>
+              <WhatsInputUser />
+              <IconTrash name="edit"/>
+              <IconEdit name="trash-2"/>
+            </WhatsUser>
+          </EntryData>
         </ViewData>
         <AboutUser>
           <AboutTitle>Sobre:</AboutTitle>
