@@ -18,12 +18,24 @@ import {
 } from './styles';
 
 interface DetailsProps{
+  photo: string;
   influencer: string,
   occupation: string,
   numberFollowers: string;
 }
 
-export const HighlightCard = ({ influencer, occupation, numberFollowers }: DetailsProps) => {
+const imgs = [
+  'https://i.imgur.com/QWbpkAW.jpg',
+  'https://i.imgur.com/WYOtWJs.jpg',
+  'https://i.imgur.com/wQwznDd.jpg',
+  'https://i.imgur.com/AAh1lLc.jpg',
+  'https://i.imgur.com/QWbpkAW.jpg',
+  'https://i.imgur.com/tBABtgQ.jpg',
+  'https://i.imgur.com/7dTwxNI.jpg',
+  'https://i.imgur.com/DiI8RPE.jpg'
+]
+
+export const HighlightCard = ({ photo, influencer, occupation, numberFollowers }: DetailsProps) => {
 
   const navigation = useNavigation();
 
@@ -34,7 +46,7 @@ export const HighlightCard = ({ influencer, occupation, numberFollowers }: Detai
   return (
     <Container onPress={ openNextScreen }>
       <Content>
-        <Image source={require('../../../assets/model01.jpg')}/>
+        <Image source={{uri: imgs[photo]}}/>
         <InfoSquare>
           <SocialNets>
             <Instagram source={require('../../../assets/instagram.png')}/>
