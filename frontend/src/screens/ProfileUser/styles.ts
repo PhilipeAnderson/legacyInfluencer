@@ -53,6 +53,7 @@ export const NameInputUser = styled.TextInput`
   padding: 5px;
   border: none;
   border-radius: 5px;
+  color: ${({ theme }) => theme.colors.textLight };
   background-color: ${({ theme }) => theme.colors.backgroundGray };
 `;
 
