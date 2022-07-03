@@ -4,6 +4,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
 const { Navigator, Screen,  } = createNativeStackNavigator();
 
+import { Login } from '../screens/Login';
 import { LoginToken } from '../screens/LoginToken';
 import { Home } from '../screens/Home';
 import { Confirm } from '../screens/Confirm';
@@ -16,6 +17,10 @@ import { ProfileUser } from '../screens/ProfileUser';
 export const AppRoutes = () => {
   return(
     <Navigator screenOptions={{ headerShown: false}}>
+      <Screen
+        name="Login"
+        component={ Login }
+      />
       <Screen
         name="LoginToken"
         component={ LoginToken }
