@@ -76,7 +76,7 @@ export const ProfileUser = () => {
           />
           <Button
             title="Sair do App"
-            navig="LoginToken"
+            navig="Login"
           />
         </ViewButtons>
       </Content>

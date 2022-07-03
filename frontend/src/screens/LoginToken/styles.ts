@@ -5,14 +5,14 @@ export const Container = styled.View`
   flex: 1;
   align-items: center;
   justify-content: center;
-  background-color: ${({ theme}) => theme.colors.backgroundDark};
+  background-color: ${({ theme}) => theme.colors.backgroundDark };
 `;
 
 export const Header = styled.View`
   width: 100%;
   height: 30%;
   align-items: center;
-  background-color: ${({ theme }) => theme.colors.backgroundDark};
+  background-color: ${({ theme }) => theme.colors.backgroundDark };
 `;
 
 export const Logo = styled.Image`
@@ -24,14 +24,7 @@ export const Content = styled.View`
   height: 70%;
   align-items: center;
   justify-content: center;
-  background-color: ${({ theme }) => theme.colors.backgroundDefault};
-`;
-
-export const TextContent = styled.Text`
-  text-align: center;
-  font-size: ${RFValue(36)}px;
-  margin-top: ${RFValue(20)}px;
-  color: ${({ theme }) => theme.colors.textLight}
+  background-color: ${({ theme }) => theme.colors.backgroundDefault };
 `;
 
 export const TextLogin = styled.Text`
@@ -39,6 +32,5 @@ export const TextLogin = styled.Text`
   font-size: ${RFValue(18)}px;
   margin-top: ${RFValue(30)}px;
   margin-bottom: ${RFValue(30)}px;
-  color: ${({ theme }) => theme.colors.textLight}
-
+  color: ${({ theme }) => theme.colors.textLight };
 `;

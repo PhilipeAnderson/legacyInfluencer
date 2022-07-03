@@ -30,7 +30,7 @@ export const Login = () => {
         </TextLogin>
         <SignInButtonToken
           title="Logar"
-          navig="Home"
+          navig="LoginToken"
         />
       </Content>
     </Container>

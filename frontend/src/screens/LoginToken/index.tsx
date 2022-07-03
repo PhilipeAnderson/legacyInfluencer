@@ -5,8 +5,7 @@ import {
   Container, 
   Header, 
   Content, 
-  Logo, 
-  TextContent, 
+  Logo,
   TextLogin 
 } from './styles';
 
@@ -18,18 +17,15 @@ export const LoginToken = () => {
         <Logo source={require('../../assets/logo.png')} />
       </Header>
       <Content>
-        <TextContent>
-          Para um mercado {'\n'}
-          diversificado seu {'\n'}
-          influencer {'\n'}
-          personalizado
-        </TextContent>
         <TextLogin>
-          Faça seu Login com {'\n'}
-          uma das contas abaixo
+          Faça seu Login
         </TextLogin>
         <SignInButtonToken
-          title="Logar"
+          title="Entrar"
+          navig="Home"
+        />
+        <SignInButtonToken
+          title="Entrar com o Google"
           navig="Home"
         />
       </Content>
