@@ -1,12 +1,18 @@
 import React from 'react';
 import { SignInButtonToken } from '../../components/SignInButtonToken';
+import { SignInButton } from '../../components/SignInButton';
 
-import { 
-  Container, 
-  Header, 
-  Content, 
+import GoogleSvg from '../../assets/icon-google.svg';
+
+import {
+  Container,
+  Header,
+  Content,
   Logo,
-  TextLogin 
+  TextLogin,
+  InputsFields,
+  InputLogin,
+  InputPassword
 } from './styles';
 
 export const LoginToken = () => {
@@ -20,13 +26,21 @@ export const LoginToken = () => {
         <TextLogin>
           Faça seu Login
         </TextLogin>
-        <SignInButtonToken
-          title="Entrar"
-          navig="Home"
-        />
-        <SignInButtonToken
+        <InputsFields>
+          <InputLogin placeholder="Digite seu Login" />
+          <InputPassword placeholder="Digite sua Senha" />
+          <SignInButtonToken
+            title="Entrar"
+            navig="Home"
+          />
+        </InputsFields>
+        <TextLogin>
+          Ou use seu Login Google
+        </TextLogin>
+        <SignInButton
           title="Entrar com o Google"
           navig="Home"
+          svg={GoogleSvg}
         />
       </Content>
     </Container>

@@ -26,10 +26,10 @@ export const Login = () => {
         </TextContent>
         <TextLogin>
           Faça seu Login com {'\n'}
-          uma das contas abaixo
+          uma das suas contas
         </TextLogin>
         <SignInButtonToken
-          title="Logar"
+          title="Entre"
           navig="LoginToken"
         />
       </Content>

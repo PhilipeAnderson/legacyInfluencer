@@ -34,3 +34,34 @@ export const TextLogin = styled.Text`
   margin-bottom: ${RFValue(30)}px;
   color: ${({ theme }) => theme.colors.textLight };
 `;
+
+export const InputsFields = styled.View`
+  width: 100%;
+  margin: 0 auto;
+  align-items: center;
+`;
+
+export const InputLogin = styled.TextInput`
+  width: 87%;
+  height: 50px;
+  border: none;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  font-size: 20px;
+  color: ${({ theme }) => theme.colors.textLight };
+  background-color: ${({ theme }) => theme.colors.backgroundLight };
+
+`;
+
+export const InputPassword = styled.TextInput`
+  width: 87%;
+  height: 50px;
+  border: none;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  font-size: 20px;
+  color: ${({ theme }) => theme.colors.textLight };
+  background-color: ${({ theme }) => theme.colors.backgroundLight };
+`;

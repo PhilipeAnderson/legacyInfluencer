@@ -1,11 +1,8 @@
 import React from 'react';
 
-import { RectButtonProps } from 'react-native-gesture-handler';
-import { SvgProps } from 'react-native-svg';
-
 import { useNavigation } from '@react-navigation/native';
 
-import { Container, Title, SocialImg } from './styles';
+import { Container, Title } from './styles';
 
 interface SignInButtonTokenTextProps{
   title: string;
@@ -16,10 +13,11 @@ export const SignInButtonToken = ({ title, navig }: SignInButtonTokenTextProps )
   
   const navigation = useNavigation();
 
-  function openScreen() {
+  const openScreen = () => {
     navigation.navigate( navig );
   }
 
+    // Page for login with Login and Password
   return ( 
     <Container>
       <Title onPress={openScreen}>
