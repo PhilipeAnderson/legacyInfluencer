@@ -19,8 +19,6 @@ import {
   ChoiceStoriesText,
   ChoicePost,
   ChoicePostText,
-  ChoiceEvent,
-  ChoiceEventText,
   ContractValue,
   ContractValueText,
   ContractValueMoney
@@ -53,10 +51,6 @@ export const BudgetInfluencer = () => {
               <ChoicePostText>Número de Post</ChoicePostText>
               <Input title="06"/>
             </ChoicePost>
-            <ChoiceEvent>
-              <ChoiceEventText>Número de Post</ChoiceEventText>
-              <Input title="01"/>
-            </ChoiceEvent>
           </ChoiceStoriesPostEvent>
         </ChoiceQuantity>
         <ContractValue>

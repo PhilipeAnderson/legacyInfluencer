@@ -24,7 +24,8 @@ export const LoginToken = () => {
       </Header>
       <Content>
         <TextLogin>
-          Faça seu Login
+          Entre no app {'\n'}
+          com seu Login e Senha
         </TextLogin>
         <InputsFields>
           <InputLogin placeholder="Digite seu Login" />
@@ -35,7 +36,7 @@ export const LoginToken = () => {
           />
         </InputsFields>
         <TextLogin>
-          Ou use seu Login Google
+          Ou {'\n'} Use sua conta Google
         </TextLogin>
         <SignInButton
           title="Entrar com o Google"
