@@ -28,7 +28,10 @@ export const LoginToken = () => {
           com seu Login e Senha
         </TextLogin>
         <InputsFields>
-          <InputLogin placeholder="Digite seu Login" />
+          <InputLogin 
+            placeholder="Digite seu Login" 
+              
+          />
           <InputPassword placeholder="Digite sua Senha" />
           <SignInButtonToken
             title="Entrar"
