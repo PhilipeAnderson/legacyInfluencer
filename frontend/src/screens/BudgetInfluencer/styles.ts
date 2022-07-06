@@ -82,6 +82,15 @@ export const ChoicePostText = styled.Text`
   color: ${({ theme }) => theme.colors.backgroundLight};
 `;
 
+export const ChoiceSelectStory = styled.TouchableOpacity`
+
+`;
+
+export const ChoiceSelectPost = styled.TouchableOpacity`
+
+`;
+
+
 export const ContractValue = styled.View`
   width: 100%;
   align-items: center;
