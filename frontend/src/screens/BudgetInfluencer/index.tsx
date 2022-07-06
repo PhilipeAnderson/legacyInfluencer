@@ -1,4 +1,6 @@
-import React from 'react';
+import React,{ useState } from 'react';
+
+import { StyleSheet } from 'react-native';
 
 import { Header } from '../../components/Header';
 import { NetSocial } from '../../components/NetSocial';
@@ -26,6 +28,34 @@ import {
 
 export const BudgetInfluencer = () => {
 
+  const [frequencyDay, setFrequencyDay] = useState(true);
+  const [frequencyWeek, setFrequencyWeek] = useState(true);
+  const [frequencyMonth, setFrequencyMonth] = useState(true);
+
+  const contractFrequencyDay = () => {
+    frequencyDay === true ? setFrequencyDay(false) : setFrequencyDay(true)
+    if(frequencyDay){
+      let back = styles.back
+      return back
+    }
+  }
+
+  const contractFrequencyWeek = () => {
+    frequencyWeek === true ? setFrequencyWeek(false) : setFrequencyWeek(true)
+    if(frequencyWeek){
+      let back = styles.back
+      return back
+    }
+  }
+
+  const contractFrequencyMonth = () => {
+    frequencyMonth === true ? setFrequencyMonth(false) : setFrequencyMonth(true)
+    if(frequencyMonth){
+      let back = styles.back
+      return back
+    }
+  }
+
   return (
     <>
     <Header title="Orçamento"/>
@@ -35,9 +65,21 @@ export const BudgetInfluencer = () => {
         <FrequencyBudget>
           <FrequencyBudgetText>Frequência</FrequencyBudgetText>
           <FrequencyDayWeekMonth>
-            <ButtonFrequency title="DIA"/>
-            <ButtonFrequency title="SEMANA"/>
-            <ButtonFrequency title="MÊS"/>
+            <ButtonFrequency 
+              style={frequencyDay === true ? styles.back : ''}
+              title="DIA"
+              onPress={ contractFrequencyDay }
+            />
+            <ButtonFrequency  
+              style={frequencyWeek === true ? styles.back : ''}
+              title="SEMANA"
+              onPress={ contractFrequencyWeek }
+            />
+            <ButtonFrequency 
+              style={frequencyMonth === true ? styles.back : ''}
+              title="MÊS"
+              onPress={ contractFrequencyMonth }
+            />
           </FrequencyDayWeekMonth>
         </FrequencyBudget>
         <ChoiceQuantity>
@@ -66,3 +108,9 @@ export const BudgetInfluencer = () => {
     </>
   )
 }
+
+const styles = StyleSheet.create({
+  back: {
+    backgroundColor: '#626262'
+  }
+})

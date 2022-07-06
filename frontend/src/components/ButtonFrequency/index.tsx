@@ -6,9 +6,9 @@ interface TitleProps{
   title: string;
 }
 
-export const ButtonFrequency = ({ title } : TitleProps) => {
+export const ButtonFrequency = ({ title, ...rest } : TitleProps) => {
   return (
-    <Container>
+    <Container { ...rest }>
       <Title>
         { title }
       </Title>
