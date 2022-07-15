@@ -13,6 +13,7 @@ import { Contract } from '../screens/Contract';
 import { ProfileInfluencer } from '../screens/ProfileInfluencer';
 import { BudgetInfluencer } from '../screens/BudgetInfluencer';
 import { ProfileUser } from '../screens/ProfileUser';
+import { Register } from '../screens/Register';
 
 export const AppRoutes = () => {
   return(
@@ -52,6 +53,10 @@ export const AppRoutes = () => {
       <Screen
         name="ProfileUser"
         component={ ProfileUser }
+      />
+      <Screen
+        name="Register"
+        component={ Register }
       />
     </Navigator>
   )
