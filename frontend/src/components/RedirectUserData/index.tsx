@@ -9,7 +9,7 @@ export const RedirectUserData = () => {
   return(
     <Container>
       <Button 
-        title="Preencha Seus Dados"
+        title="Mais info sobre você"
         navig="ProfileUserData"
       />
     </Container>

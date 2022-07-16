@@ -30,7 +30,6 @@ export const LoginToken = () => {
         <InputsFields>
           <InputLogin 
             placeholder="Digite seu Login" 
-              
           />
           <InputPassword placeholder="Digite sua Senha" />
           <SignInButtonToken

@@ -1,5 +1,7 @@
 import React from 'react';
-import { SignInButtonToken } from '../../components/SignInButtonToken';
+import { SignInButton } from '../../components/SignInButton';
+
+import GoogleSvg from '../../assets/icon-google.svg';
 
 import { 
   Container, 
@@ -28,9 +30,10 @@ export const Login = () => {
           Faça seu Login com {'\n'}
           uma das suas contas
         </TextLogin>
-        <SignInButtonToken
-          title="Entre"
-          navig="LoginToken"
+        <SignInButton
+          title="Entrar com o Google"
+          navig="Home"
+          svg={GoogleSvg}
         />
       </Content>
     </Container>
