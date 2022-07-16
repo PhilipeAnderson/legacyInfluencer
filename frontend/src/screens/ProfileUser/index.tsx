@@ -2,24 +2,13 @@ import React from 'react';
 
 import { Header } from '../../components/Header';
 import { Button } from '../../components/Button';
+import { ProfileUserData } from '../../components/ProfileUserData'
 
 import {
   Container,
   Content,
   ViewData,
   TitleData,
-  EntryData,
-  NameUser,
-  NameLabelUser,
-  NameInputUser,
-  EmailUser,
-  EmailLabelUser,
-  EmailInputUser,
-  WhatsUser,
-  WhatsLabelUser,
-  WhatsInputUser,
-  IconTrash,
-  IconEdit,
   AboutUser,
   AboutTitle,
   AboutText,
@@ -35,26 +24,7 @@ export const ProfileUser = () => {
           <TitleData>
             Dados para ser contactado:
           </TitleData>
-          <EntryData>
-            <NameUser>
-              <NameLabelUser>Nome:</NameLabelUser>
-              <NameInputUser />
-              <IconTrash name="edit"/>
-              <IconEdit name="trash-2"/>
-            </NameUser>
-            <EmailUser>
-              <EmailLabelUser>E-mail:</EmailLabelUser>
-              <EmailInputUser />
-              <IconTrash name="edit"/>
-              <IconEdit name="trash-2"/>
-            </EmailUser>
-            <WhatsUser>
-              <WhatsLabelUser>Whats:</WhatsLabelUser>
-              <WhatsInputUser />
-              <IconTrash name="edit"/>
-              <IconEdit name="trash-2"/>
-            </WhatsUser>
-          </EntryData>
+          <ProfileUserData />
         </ViewData>
         <AboutUser>
           <AboutTitle>Sobre:</AboutTitle>
