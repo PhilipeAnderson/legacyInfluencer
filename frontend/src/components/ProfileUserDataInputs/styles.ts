@@ -59,6 +59,7 @@ export const EmailInputUser = styled.TextInput`
   padding: 5px;
   border: none;
   border-radius: 5px;
+  color: ${({ theme }) => theme.colors.textLight };
   background-color: ${({ theme }) => theme.colors.backgroundGray };
 `;
 
@@ -82,6 +83,7 @@ export const WhatsInputUser = styled.TextInput`
   padding: 5px;
   border: none;
   border-radius: 5px;
+  color: ${({ theme }) => theme.colors.textLight };
   background-color: ${({ theme }) => theme.colors.backgroundGray };
 `;
 
