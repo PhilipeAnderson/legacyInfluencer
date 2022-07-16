@@ -18,3 +18,9 @@ export const DataUser = styled.View`
   margin-top: 50px;
 `;
 
+export const ButtonConfirm = styled.View`
+  width: 100%;
+  margin: 60px;
+
+`;
+
