@@ -26,6 +26,10 @@ export const TitleData = styled.Text`
   color: ${({ theme }) =>  theme.colors.backgroundLight };
 `;
 
+export const RedirectData = styled.View`
+  margin: 50px;
+`;
+
 export const AboutUser = styled.View`
   width: 100%;
   height: 30%;

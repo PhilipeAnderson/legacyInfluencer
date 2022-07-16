@@ -13,7 +13,7 @@ import { Contract } from '../screens/Contract';
 import { ProfileInfluencer } from '../screens/ProfileInfluencer';
 import { BudgetInfluencer } from '../screens/BudgetInfluencer';
 import { ProfileUser } from '../screens/ProfileUser';
-import { ProfileUserData } from '../components/ProfileUserData';
+import { ProfileUserData } from '../screens/ProfileUserData';
 import { Register } from '../screens/Register';
 
 export const AppRoutes = () => {

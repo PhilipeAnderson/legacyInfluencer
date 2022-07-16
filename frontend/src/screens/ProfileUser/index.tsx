@@ -2,13 +2,14 @@ import React from 'react';
 
 import { Header } from '../../components/Header';
 import { Button } from '../../components/Button';
-import { ProfileUserData } from '../../components/ProfileUserData'
+import { RedirectUserData } from '../../components/RedirectUserData';
 
 import {
   Container,
   Content,
   ViewData,
   TitleData,
+  RedirectData,
   AboutUser,
   AboutTitle,
   AboutText,
@@ -18,13 +19,15 @@ import {
 export const ProfileUser = () => {
   return(
     <Container>
-      <Header title='Perfil Do Usuário' />
+      <Header title="Perfil Do Usuário" />
       <Content>
         <ViewData>
           <TitleData>
             Dados para ser contactado:
           </TitleData>
-          <ProfileUserData />
+          <RedirectData>
+            <RedirectUserData />
+          </RedirectData>  
         </ViewData>
         <AboutUser>
           <AboutTitle>Sobre:</AboutTitle>

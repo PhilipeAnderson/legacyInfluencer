@@ -10,6 +10,7 @@ export declare global {
       ProfileInfluencer: undefined;
       BudgetInfluencer: undefined;
       ProfileUser: undefined;
+      ProfileUserData: undefined;
       Register: undefined;
     }
   }
