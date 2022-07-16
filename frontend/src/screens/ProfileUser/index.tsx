@@ -40,10 +40,6 @@ export const ProfileUser = () => {
         </AboutUser>
         <ViewButtons>
           <Button 
-            title="Confirmar"
-            navig="Home"
-          />
-          <Button 
             title="Voltar para o App"
             navig="Home"
           />
