@@ -1,6 +1,6 @@
 import React from 'react';
-import * as AuthSession from 'expo-auth-session';
 
+import * as AuthSession from 'expo-auth-session';
 import { useNavigation } from '@react-navigation/native';
 
 import { RectButtonProps } from 'react-native-gesture-handler';
