@@ -1,5 +1,7 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { useNavigation } from '@react-navigation/native';
+
+import { AuthContext } from '../../context/auth';
 
 import { 
   Container,
@@ -17,7 +19,13 @@ interface titleProps {
   title: string;
 }
 
+type DataUser = {
+  nameTeste: any;
+}
+
 export const Header = ({ title }: titleProps) => {
+
+  const { nameTeste }: DataUser = useContext(AuthContext);
 
   const navigation = useNavigation();
 
@@ -32,7 +40,7 @@ export const Header = ({ title }: titleProps) => {
           <UserPic source={require('../../assets/user.png')} />
           <UserGreeting>
             <TextGreeting>Olá , </TextGreeting>
-            <TextGreeting>Usuário</TextGreeting>
+            <TextGreeting>{ nameTeste }</TextGreeting>
           </UserGreeting>
         </UserData>
         <UserProfile onPress={ openNextScreen }>
